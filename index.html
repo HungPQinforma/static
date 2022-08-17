@@ -11,19 +11,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script
-      src="https://unpkg.com/@contentstack/ui-extensions-sdk@2.2.0/dist/ui-extension-sdk.js"
-      async
-    ></script>
-    <script type="text/javascript" defer>
-      ContentstackUIExtension.init().then(function (extension) {
-        window.extension = extension
-      })
-    </script>
+    <script src="https://unpkg.com/@contentstack/ui-extensions-sdk@2.2.0/dist/ui-extension-sdk.js"></script>
     <link rel="stylesheet" href="./assets/index.fd84dc29.css" />
   </head>
   <body>
     <div id="root"></div>
+    <script type="text/javascript">
+      ContentstackUIExtension.init().then(function (extension) {
+        window.extension = extension
+      })
+    </script>
+
     <script
       type="module"
       crossorigin
